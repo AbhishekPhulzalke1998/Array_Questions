@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [15, 18, 14, 19, 16, 13];
+        var sumEven = 0;
+        var sumOdd = 0;
+
+
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 0) {
+                document.write("The Even numbers are: " + a[i] + "<br>");
+                sumEven += a[i];
+            }
+        }
+
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] % 2 != 0) {
+                document.write("The Odd numbers are: " + a[i] + "<br>");
+                sumOdd += a[i];
+            }
+        }
+
+        document.write("The addition of the even numbers is: " + sumEven + "<br>");
+        document.write("The addition of the odd numbers is: " + sumOdd);
+    </script>
+</body>
+</html>
